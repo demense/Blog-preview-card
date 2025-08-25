@@ -5,7 +5,32 @@
 }
 :root {
     --yellow: hsl(47, 88%, 63%);
-    --white: hsl(0, 0%, 100%);
     --gray-500: hsl(0, 0%, 42%);
     --gray-950: hsl(0, 0%, 7%);
+    --card-width: 24rem;
+    --card-height: 32.5rem;
+}
+html, body {
+    height: 100%;
+}
+body {
+    background-color: var(--yellow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    width: var(--card-width);
+    height: var(--card-height);
+    background-color: white;
+    border-radius: 1.22rem;
+    padding: 1.4rem;
+    outline: 0.063rem solid black;
+    box-shadow: 0.55rem 0.50rem 0 black;
+    display: flex;
+    flex-direction: column;
+}
+img {
+    width: var(--card-width);
+    border-radius: 0.75rem;
 }
